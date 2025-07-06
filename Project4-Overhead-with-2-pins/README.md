@@ -10,10 +10,12 @@
 - connect the pins to two inputs in the logic analyzer and don't forget to add the ground connection from the Arduino to the logic analyzer.
 
 ## Exercise 1
-- measure the delay between the two digitalWrite() functions using the logic analyzer.
+- measure the delay between the two digitalWrite() functions using the logic analyzer. --- A: The delay is about 3.5 microseconds
 Paste screenshots below:
 
-enter the delay in usec here:  __________
+![alt text](digital_write_delay.PNG) ![alt text](Omer_Capture.PNG)
+
+enter the delay in usec here:  ___~3.6_______
 
 ## write a 2nd program that does the following:
 - based on the first program, add any calculation (adding one to an additional variable for example) and store the result in a variable between the two digitalWrite() functions.
@@ -21,13 +23,13 @@ enter the delay in usec here:  __________
 ## Exercise 2
 - measure the delay the originated from the calculation between the two digitalWrite() functions using the logic analyzer.
 Paste screenshots below:
-
-enter the delay in usec here:  __________
+------ A: the additional delay is 0.38
+enter the delay in usec here:  _____3.88_this is the total delay time____
 
 ## Exercise 3
-- Use chatGPT or similar to find how to write simultaneously to both pins. Measure the delay between the pins now. 
+- Use chatGPT or similar to find how to write simultaneously to both pins. Measure the delay between the pins now. ---- A: it seems that there is no delay now
 - Paste a screenshot below.
-
+![alt text](simul_pin_change.PNG)
 ## Git
  - Commit and push the two programs and the README into the repository
 
