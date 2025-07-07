@@ -22,12 +22,12 @@ for (int i = 0; i< 10000; i++){
 }
 ```
 - test if lighting led still works. Why or why not?
-answer here: __________
+answer here: ____The LED will turn on when pressed only when the code is not within the "for" loop, which means that I have only a specific moment in which I can activate my LED.______
 
 ## Use interrupt to light led
-- Add code to create an interrupt pin (why can't it be the button pin?). Use a variable for this.
+- Add code to create an interrupt pin (why can't it be the button pin?). Use a variable for this. ---- A: It cannot be the interrupt pin because the interrupt pins can be only D2 and D3
 - Short the interrupt pin with the button pin
-- test. Does it work?
+- test. Does it work? ----A: Yes! I shorted the interrupt pin with the button pin and toggled a boolean variable to switch the LED On and Off   
 
 ## Exercises
  - commit and upload your code in this project folder.
