@@ -8,11 +8,15 @@
 - Do not use a delay() function here. Please use the system clock to measure the time. look for the millis() function in the Arduino reference.
 Test the code and make sure it works as expected
 paste a screen shot from the logic analyzer below:
- 
+
+![alt text](timers_with_milis.PNG)
+
 ## update the code to add a delay in the loop function
 - Add the same for loop as in the previous exercise to simulate a long process. Does the LED still turn off after 5 seconds? Why or why not?
-answer here: __________
+answer here: __The LED stays ON longer then 5 seconds since it enters the loop______
 add a screen shot from the logic analyzer below:
+
+![alt text](timer_with_cal_in_loop.PNG)
 
 ## Write a second program. The proper way to solve this problem is to use a timer
 - install package mstimer2 from the library manager
@@ -21,9 +25,13 @@ add a screen shot from the logic analyzer below:
 - implement a timer to turn off the LED after 5 seconds
 - note the callback in the timer. When is it called?
 
+-----A: The callback is after 5000ms (?)
+
 ## Exercises
 - check that although the delay of 1 second is still in the loop function, the LED now turns off after 5 seconds
 
 - change the LED time ON from 5 seconds to 30 ms, measure in the scope the time the LED is ON. is it 30 ms? Why or why not?
-answer here: __________
+answer here: ___Yes, it is 30 ms, the MsTimer2 executed the function (turning off the LED) after 30 ms from the MsTimer2 start._______
 paste a screen shot from the scope below:
+
+![alt text](mstimer_function.PNG)
