@@ -52,5 +52,7 @@ In VSCode, chosse the interpreter in `intro` environment of folder.
 
 ## Exercises
 Paste a screenshot of the GUI here:
-
+![alt text](gui_picture.PNG)
 Paste a screenshot of the logic analyzer here that presents the time the LED is ON when pressing the button.
+-------------------I've changed the LED ON time to 10 ms and then took the snapshot....-------------------------
+![alt text](led_on_time_gui.PNG)
