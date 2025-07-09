@@ -18,13 +18,16 @@
 3. React to button presses on the Arduino. When the button is pressed, perform an action (e.g., print a message, turn on an LED).
 5. use threading.Timer (from the threading python package) to turn off the led. This will allow the script to perform other tasks while waiting for the button press. This version of the script should be named Reacting_button_press_pymata4_using_timer.py.
 6. Add a Graphical User Interface (GUI) to the timer version of the script. The GUI should display the state of the button (pressed or not pressed) and any actions performed in response to the button press. plus, it should have a textbox input to accept different time intervals for the timer.
-7. light the led for 30 ms. Measure in scopy the length of the led light a 5-10 times and measure the average and standard deviation. Compare to previous arduino and non firmata python code.
+7. light the led for 30 ms. Measure in scopy the length of the led light a 5-10 times and measure the average and standard deviation. Compare to previous arduino and non firmata python code.----------A: The avrage is: 34.2 ms
+and the std is 3.24 ms
 8. Include comments explaining the functionality of each part of the code.
 9. Write the script in a clean, organized, and efficient manner following good programming practices.
 
 
 ## Exercises
 Paste a screenshot of the GUI here:
+
+![alt text](using_firmata_to_turn_light.PNG)
 
 Paste a screenshot of the logic analyzer here that presents the time the LED is ON when pressing the button.
 

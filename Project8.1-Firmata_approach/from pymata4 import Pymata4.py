@@ -81,3 +81,14 @@ if led_timer:
     led_timer.cancel()
 board.shutdown()
 window.close()
+
+#%%
+import numpy as np
+led_on_times = np.mean([33,31,37,31,39])
+led_on_stds = np.std([33,31,37,31,39])
+
+
+print(led_on_times)
+print(led_on_stds)# %%
+
+# %%
