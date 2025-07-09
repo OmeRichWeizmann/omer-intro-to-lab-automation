@@ -3,7 +3,7 @@
 
 void setup() {
   // Initialize serial communication
-  Serial.begin(2400);
+  Serial.begin(9600);
 
   // Define pin numbers
 

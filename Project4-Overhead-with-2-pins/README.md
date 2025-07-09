@@ -10,7 +10,7 @@
 - connect the pins to two inputs in the logic analyzer and don't forget to add the ground connection from the Arduino to the logic analyzer.
 
 ## Exercise 1
-- measure the delay between the two digitalWrite() functions using the logic analyzer. --- A: The delay is about 3.5 microseconds
+- measure the delay between the two digitalWrite() functions using the logic analyzer. --- A: The delay is ~3.6 microseconds
 Paste screenshots below:
 
 ![alt text](digital_write_delay.PNG) ![alt text](Omer_Capture.PNG)

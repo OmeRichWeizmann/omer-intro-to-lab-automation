@@ -21,4 +21,4 @@
  - no need to commit anything in this project
 
 ## Exercises
-- LED blinks when: the code is running
+- LED blinks when: The LED blinks while the code is running.

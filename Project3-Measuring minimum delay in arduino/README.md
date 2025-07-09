@@ -21,8 +21,8 @@
  - open scopy program
  - connect to ADALM2000
  - open scopy logic analyzer
- - activate DIO0 and rising edge and run (why?) ---- A: We will activate DI00 to read signal from this channel, activate rising edge to lock the signal in the desired phase (so we will place the cursers in place).
- - play with the scopy parameters until you can see the separate blinks. Which parameter(s) do you need to change? ---- A: I played with the sampling rate and number of samples parameters (for fun).
+ - activate DIO0 and rising edge and run (why?) ---- A: We will activate DI00 to read signal from this channel, activate rising edge to lock the signal in the desired edge (it will also allow us to stop signal from jumping and set corsursr in place)
+ - play with the scopy parameters until you can see the separate blinks. Which parameter(s) do you need to change? ---- A: I played with the sampling rate and number of samples parameters.
  - use cursors and sample rate to measure the pulse width
  - take screenshots and add them to the README below.
 
