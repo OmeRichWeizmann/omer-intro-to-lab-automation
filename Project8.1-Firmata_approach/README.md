@@ -34,7 +34,7 @@ Paste a screenshot of the logic analyzer here that presents the time the LED is 
 ```
 What is the difference between the two versions (with pymata4 and firmata and without) of the script? Which one was easier to code? Where was thread handling easier?
 
-Answer: __________
+Answer: ___It was easier to code using the pymata4 library as well as the thread handling, but was less flexiable due to the limitations of the firmata library. when working without firmata and pymata4 we are "free" to write in hand whatever we want, but we need to write both the arduino code and the python code which make it (at least for myself) more complicated.   _______
 
 
 What can you say about the accuracy of the timing between the firmata version and your arduino code version?
