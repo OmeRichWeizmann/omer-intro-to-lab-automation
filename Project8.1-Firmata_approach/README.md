@@ -30,7 +30,7 @@ Paste a screenshot of the GUI here:
 ![alt text](using_firmata_to_turn_light.PNG)
 
 Paste a screenshot of the logic analyzer here that presents the time the LED is ON when pressing the button.
-
+![alt text](logic_save_show_firmata_time.PNG)
 ```
 What is the difference between the two versions (with pymata4 and firmata and without) of the script? Which one was easier to code? Where was thread handling easier?
 
@@ -40,6 +40,8 @@ Answer: __________
 What can you say about the accuracy of the timing between the firmata version and your arduino code version?
 which one is more accurate and why?
 
+A: It seems that the arduino code version is faster and more accurate, when working with pymata and firmata our signal length accuracy goes lower (as the std gets higher). 
+
 What are the advantages and disadvantages of using the pymata4 package?
 
-Answer: __________
+Answer: ___The advantages of working with pymata4 package are the ability to work directly in python without having the need each time to save a file in the IDE or burn the progrem to the arduino. The disadvantages are the lack of accuracy and the delay it creates when working through vs.  _______
