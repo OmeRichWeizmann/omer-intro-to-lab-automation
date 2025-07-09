@@ -1,11 +1,10 @@
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 import serial
 import threading
-import time
 
 # Initialize serial communication
 try:
-    arduino = serial.Serial(port='COM3', baudrate=9600, timeout=1)  # Replace 'COM3' with your Arduino's port
+    arduino = serial.Serial(port='COM4', baudrate=9600, timeout=1)  # Replace 'COM3' with your Arduino's port
 except serial.SerialException as e:
     sg.popup_error(f"Error connecting to Arduino: {e}")
     exit()
@@ -58,8 +57,19 @@ while True:
     # Handle serial data received
     if event == '-SERIAL-':
         response = values['-SERIAL-']
-        window['-RESPONSE-'].update(response)
-        print(f"Arduino: {response}")
+        # Interpret the response from Arduino
+        if response == '0':
+            message = "LED off"
+        elif response == '1':
+            message = "Button pressed, LED on"
+        elif response == '2':
+            message = "Button released"
+        else:
+            message = f"Unknown response: {response}"
+        
+        # Update the GUI with the message
+        window['-RESPONSE-'].update(message)
+        print(f"Arduino: {message}")
 
 # Close the serial connection and GUI
 arduino.close()

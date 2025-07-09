@@ -37,6 +37,7 @@ void loop() {
     buttonPressed = false; // Reset the flag
     ledState = true;       // Turn on the LED
     digitalWrite(ledPin, HIGH);
+    Serial.println("1");   // Send "1" to indicate button pressed and LED on
     MsTimer2::set(timerDuration, turnOffLED); // Set the timer duration
     MsTimer2::start();                        // Start the timer
   }
@@ -44,6 +45,7 @@ void loop() {
 
 // Interrupt Service Routine (ISR) for button press
 void handleButtonPress() {
+  Serial.println("2"); // Send "2" to indicate button was pressed
   buttonPressed = true; // Set the flag to indicate the button was pressed
 }
 
@@ -51,5 +53,6 @@ void handleButtonPress() {
 void turnOffLED() {
   digitalWrite(ledPin, LOW); // Turn off the LED
   ledState = false;          // Update the LED state
+  Serial.println("0");       // Send "0" to indicate LED is off
   MsTimer2::stop();          // Stop the timer
 }
