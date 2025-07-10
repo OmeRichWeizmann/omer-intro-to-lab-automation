@@ -25,6 +25,7 @@ Build a system that:
 4. Record a video of the system and add to the README below (by dragging it in while pressing the `shift` key).
 5. develop a GUI that displays the angle in a graph or compass and the buzzer state as a LED in real-time and logs the data in a csv file.
 6. Record a new video that also shows the GUI and add to the readme below
+[text](../../../../Downloads/IMG_4346.mov)
 7. Make sure to handle possible errors
 8. Use good programming practices:
     - Document the code (first line in file, functions, loops, code blocks)
